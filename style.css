@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.main-container {
+    margin: 200px auto;
+    background-color: rgb(243, 234, 234);
+    width: 100%;
+    max-width: 1440px;
+}
+.secondery-containe {
+    width:100%;
+    max-width: 1111px;
+    margin: 0 auto;
+
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1440px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo {        
+    margin: 0 0 0 20px;
+}
+.header-nav-par a{
+    text-decoration: none;
+    color: inherit;
+}
+.header-nav-par ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;  
+}
+
+.header-nav-par li{
+    margin: 10px 38px 0 0;
+}
+.header-nav-par li:hover {
+    color: red;
+}
+/* main content */
+.testmonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-template-areas:
+    'grid-area-1 grid-area-1 grid-area-2'
+    "grid-area-1 grid-area-1 grid-area-2"
+    "grid-area-3 grid-area-3 grid-area-3"
+    ;
+}
+@media screen and (max-width: 444px) {
+    .testmonial-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "grid-area-1 "
+        "grid-area-2 "
+        "grid-area-3 "
+        ;
+    }
+  }
+.grid-area-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "one  one"
+    "tow three";
+    gap: 1rem;
+}
+.grid-area-1{
+    grid-area:grid-area-1 ;
+}
+.grid-area-2 {
+    grid-area: grid-area-2;
+}
+.grid-area-3{
+    grid-area: grid-area-3;
+}
+.one {
+    grid-area: one;
+    
+}
+.tow {
+    grid-area:tow;
+}
+.three {
+    grid-area: three;
+}
+article img {
+    width: 100%;
+    max-width: 730px;
+    height: 100%;
+    max-height: 300px;
+}
+.grid-area-1 h1 {
+    font-size: 3em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+/* grid 2  style */
+.grid-area-2 div {
+background-color: black;
+height: 100%;
+max-height: 509px;
+}
+.grid-area-2 h1 {
+    color: #EBAF59;
+}
