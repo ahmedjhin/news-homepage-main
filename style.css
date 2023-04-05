@@ -1,5 +1,6 @@
-* {
+* , *::before, *::after{
     margin: 0;
+    padding: 0;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -178,13 +179,41 @@ width: 100%;
     background-color: rgb(16, 16, 46);
     color: white;
     width: 185px; height: 48px;
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-family: "inter", "sans-serif";
+}
+.grid-area-1-button:hover {
+    cursor: pointer;
 }
 
 /* grid area 1 end style */
+
+/* grid area 3 style start */
+.grid-area-3 {
+    margin-top: 70px;
+    display: grid; 
+    grid-gap:20px;
+    grid-template-columns: 350px 350px 370px;
+    grid-template-areas: 
+    'card-1 card-2 card-3'
+    ;
+
+}
+
+.card-1  ,.card-2,.card-3{ 
+    display: flex;
+
+}
+.card-1 img ,.card-2 img ,.card-3 img{
+    width: 100px; height: 127px;
+    margin-right:25px;
+}
+.grid-area-3-content{
+    line-height: 150%;
+}
+/* grid area 3 style end */
 @media screen and (max-width: 444px) {
     .testmonial-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -203,5 +232,14 @@ width: 100%;
         "one"
         "tow"
         "three";
+    }
+    .grid-area-3 {
+        grid-template-columns: 320px;
+        grid-gap:30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "card-1"
+        "card-2"
+        "card-3";
     }
   }
