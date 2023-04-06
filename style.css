@@ -86,9 +86,8 @@ body {
 }
 article img {
     width: 100%;
-    max-width: 730px;
     height: 100%;
-    max-height: 300px;
+    
 }
 .grid-area-1 h1 {
     font-size: 4em;
@@ -195,16 +194,13 @@ width: 100%;
     margin-top: 70px;
     display: grid; 
     grid-gap:20px;
-    grid-template-columns: 350px 350px 370px;
+    grid-template-columns: 33% 33% 35%;
     grid-template-areas: 
     'card-1 card-2 card-3'
     ;
-
 }
-
 .card-1  ,.card-2,.card-3{ 
     display: flex;
-
 }
 .card-1 img ,.card-2 img ,.card-3 img{
     width: 100px; height: 127px;
@@ -214,7 +210,12 @@ width: 100%;
     line-height: 150%;
 }
 /* grid area 3 style end */
+
 @media screen and (max-width: 444px) {
+    #target {
+        display: none;
+    }
+
     .testmonial-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
@@ -241,5 +242,19 @@ width: 100%;
         "card-1"
         "card-2"
         "card-3";
+    }
+    .open {
+        display: flex !important;
+        text-align: center;
+        flex-direction: column!important;
+        position: absolute;
+        right:0px;
+        background-color: aliceblue;
+        height: 100vh;
+        width: 50vw;
+        margin:0!important;
+    }
+    .header-nav-par li {
+        margin-right: 0;
     }
   }

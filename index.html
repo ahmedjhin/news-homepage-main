@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Roboto&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -26,12 +27,13 @@
           </div>
           
           <div class="header-nav-par">
-            <nav>
-              <ul>
-                <li><a href="/"> Home </a>      </li>
-                <li><a href="/"> New </a>       </li>
-                <li><a href="/"> Popular </a>   </li>
-                <li><a href="/"> Trending </a>  </li>
+            <nav class="navbar">
+              <button class="button"><img src="assets/images/icon-menu-close.svg" alt=""></button>
+              <ul id="target">
+                <li><a href="/"> Home       </a></li>
+                <li><a href="/"> New        </a></li>
+                <li><a href="/"> Popular    </a></li>
+                <li><a href="/"> Trending   </a></li>
                 <li><a href="/"> Categories </a></li>
               </ul>
             </nav>
