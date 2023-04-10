@@ -17,6 +17,9 @@ body {
     margin: 0 auto;
 
 }
+.buttone {
+    all: unset;
+}
 .header {
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -48,6 +51,8 @@ body {
 }
 /* main content */
 .testmonial-grid {
+    gap: 2rem;
+    column-gap: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
@@ -105,7 +110,7 @@ article img {
 margin:0;
 background-color: hsl(240, 100%, 5%);
 height: 100%;
-max-height: 511px;
+max-height: 528px;
 max-width:350px;
 width: 100%;
 }
@@ -113,6 +118,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     padding:0 24px 0 24px;
+
 }
 .grid-area-2 h1 {
     color: hsl(35, 77%, 62%);
@@ -165,7 +171,7 @@ width: 100%;
     font-size: 15px;
     line-height: 160%;
     color: hsl(233, 8%, 79%);
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 /* grid-area-1 style start */
@@ -193,7 +199,6 @@ width: 100%;
 .grid-area-3 {
     margin-top: 70px;
     display: grid; 
-    grid-gap:20px;
     grid-template-columns: 33% 33% 35%;
     grid-template-areas: 
     'card-1 card-2 card-3'
@@ -244,7 +249,7 @@ width: 100%;
         "card-3";
     }
     .open {
-        display: flex !important;
+        display: flex;
         text-align: center;
         flex-direction: column!important;
         position: absolute;
@@ -256,5 +261,13 @@ width: 100%;
     }
     .header-nav-par li {
         margin-right: 0;
+    }
+    .hide{
+        display: none!important;
+    }
+  }
+  @media screen and (min-width: 444px) {
+    .button-img {
+        display: none;
     }
   }
