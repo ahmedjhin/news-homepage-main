@@ -1,0 +1,86 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+@media screen and (min-width: 445px) {
+  .navbar {
+    width: 400px;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .nav-menu {
+    margin-left: 20px;
+  }
+  .nav-menu li a{
+    text-decoration: none;
+    font-weight: 600px;
+  }
+  .nav-menu li a:hover { 
+    color:red;
+  }
+}
+@media screen and (max-width: 444px) {
+  .navbar {
+    opacity: 0;
+    transition: 1s;
+  }
+  .button-img {
+    transition: 3s;
+  }
+  .header-nav-par {
+    z-index: 20;
+  }
+  .header-nav-par-open {
+    width: 60vw;
+    height: 1000px;
+    background-color: #eeebe7;
+    position: absolute;
+    right: 0.1px;
+    top: 200px;
+    transition: 1s;
+  }
+  .buttone {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .close {
+    display: none;
+  }
+  .nav-menu {
+    margin: 50px 0 0 40px;
+    list-style: none;
+  }
+  .nav-menu li {
+    margin-top: 30px;
+  }
+  .nav-menu li a {
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-weight: 600;
+  }
+  .nav-menu li a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  #shadow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Adjust the last value (0.5) to control the shadow opacity */
+    display: none;
+    z-index: 12; /* Ensure the overlay appears on top of other content */
+  }
+}
