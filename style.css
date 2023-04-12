@@ -5,6 +5,7 @@
   padding: 0;
 }
 body {
+  background-color: hsl(36, 100%, 99%);
   font-family: "Inter", sans-serif;
 }
 .main-container {
@@ -155,7 +156,7 @@ article img {
   color: hsl(240, 100%, 5%);
 }
 .grid-area-1-button {
-  background-color: rgb(16, 16, 46);
+  background-color: hsl(5, 85%, 63%);
   color: white;
   width: 185px;
   height: 48px;
@@ -163,9 +164,11 @@ article img {
   font-weight: 600;
   letter-spacing: 5px;
   font-family: "inter", "sans-serif";
+  border: 2px;
 }
 .grid-area-1-button:hover {
   cursor: pointer;
+  background-color: rgb(16, 16, 46);
 }
 
 /* grid area 1 end style */
