@@ -61,7 +61,7 @@ article img {
   height: 100%;
 }
 .grid-area-1 h1 {
-  font-size: 4em;
+  font-size: 3.5rem;
   font-family: "Inter", sans-serif;
   font-weight: 900;
   line-height: 100%;
@@ -95,6 +95,13 @@ article img {
 .grid-area-2-h3-1 {
   color: white;
 }
+.grid-area-2-h3-2:hover,
+.grid-area-2-h3-1:hover,
+.grid-area-2-h3-3:hover
+ {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
 .grid-area-2-p-1 {
   color: hsl(233, 8%, 79%);
   margin: 10px 0 35px 0px;
@@ -103,7 +110,7 @@ article img {
   line-height: 160%;
 }
 .grid-area-2-h3-2 {
-  color: hsl(35, 77%, 62%) !important;
+  color: white;
   font-size: 20px;
   margin: 0 0 9px 0;
 }
