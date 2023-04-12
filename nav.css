@@ -18,7 +18,8 @@
   }
   .nav-menu li a{
     text-decoration: none;
-    font-weight: 600px;
+    font-weight: 600;
+    color: hsl(240, 100%, 5%);
   }
   .nav-menu li a:hover { 
     color:red;
